@@ -1,0 +1,30 @@
+.title {
+  position: relative;
+  font-size: 26px;
+  line-height: 30px;
+
+  padding-left: 15px;
+
+  color: #2e3152;
+
+  margin-top: 10px;
+
+  span {
+    padding: 4px 10px;
+
+    background: #e30613;
+    border-radius: 10px;
+
+    color: $white;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 15;
+    width: 60px;
+    height: 2px;
+    background-color: red;
+  }
+}
