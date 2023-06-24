@@ -26,6 +26,7 @@
 .header__burger {
   display: block;
   position: absolute;
+  cursor: pointer;
   top: 25px;
   right: 13px;
 
@@ -108,7 +109,7 @@
 .nav-mobile {
   display: none;
 
-  background-image: url('/img/nav-mobile-bg.svg');
+  background-image: url('img/nav-mobile-bg.svg');
 
   width: 100%;
 
