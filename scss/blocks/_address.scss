@@ -112,6 +112,7 @@
 }
 
 .stops {
+  display: none;
   background: #ffffff;
   box-shadow: 0px 3.97714px 7.95429px rgba(0, 0, 0, 0.05);
   border-radius: 20px;
@@ -144,6 +145,10 @@
     padding: 20px;
     max-height: 370px;
   }
+}
+
+.stops--active {
+  display: block;
 }
 
 .stops__title {

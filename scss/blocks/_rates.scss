@@ -55,9 +55,6 @@
 
   text-align: center;
 
-  font-weight: 500;
-  font-size: 16px;
-
   color: #2e3152;
   cursor: pointer;
 }
@@ -76,7 +73,7 @@
 .rates__list {
   @media (min-width: 960px) {
     display: flex;
-
+    align-items: center;
     justify-content: center;
   }
 }
@@ -169,6 +166,7 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 23px;
+  position: relative;
 
   margin-top: 20px;
   margin-bottom: 20px;
@@ -184,14 +182,41 @@
   }
 }
 
+// Чекбоксы
+
+.checkbox__label {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.checkbox__input {
+  display: none;
+}
+
+.checkbox__fake {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+
+  border: 3px solid black;
+  border-radius: 5px;
+}
+
+.checkbox__input:checked + .checkbox__fake {
+  background-image: url('/img/check.svg');
+  border: none;
+}
+
 .options__list {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 15px;
 }
 .options__item {
   display: flex;
   align-items: center;
+  position: relative;
 
   font-style: normal;
   font-weight: 400;
@@ -200,8 +225,24 @@
 
   color: #2e3152;
 
-  img {
-    margin-right: 20px;
+  .checkbox-btn {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    min-width: 15px;
+    min-height: 15px;
+
+    border: 1px solid #cccdcc;
+    border-radius: 3.75px;
+
+    background-color: #fff;
+    position: relative;
+
+    background-image: url('/img/checked.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
   }
 }
 

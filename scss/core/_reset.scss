@@ -8,7 +8,7 @@ body {
 
   background-color: #f6f5f3;
 
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto';
 }
 
 main {
@@ -28,6 +28,9 @@ button {
   border: none;
   padding: 0;
   background: #ffffff;
+
+  font-family: 'Roboto';
+  font-weight: 500;
 }
 
 li {

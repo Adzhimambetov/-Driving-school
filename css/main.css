@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f6f5f3;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
 }
 
 main {
@@ -27,6 +27,8 @@ button {
   border: none;
   padding: 0;
   background: #ffffff;
+  font-family: "Roboto";
+  font-weight: 500;
 }
 
 li {
@@ -503,16 +505,12 @@ ul {
   padding-top: 10px;
   padding-left: 10px;
   padding-right: 57px;
+  overflow: hidden;
   min-height: 145px;
   max-width: 374px;
   background: #ffffff;
   box-shadow: 0px 3.97714px 7.95429px rgba(0, 0, 0, 0.05);
   border-radius: 20px;
-}
-.advantages__item img {
-  position: absolute;
-  bottom: 0;
-  right: 0;
 }
 @media (min-width: 1024px) {
   .advantages__item {
@@ -522,6 +520,17 @@ ul {
   .advantages__item img {
     display: none;
   }
+}
+
+.advantages__img {
+  position: absolute;
+  bottom: 0;
+  right: 0px;
+}
+.advantages__img--position {
+  right: -40px;
+  bottom: -30px;
+  overflow: hidden;
 }
 
 .advantages__title {
@@ -609,8 +618,6 @@ ul {
   height: 49px;
   line-height: 49px;
   text-align: center;
-  font-weight: 500;
-  font-size: 16px;
   color: #2e3152;
   cursor: pointer;
 }
@@ -629,6 +636,7 @@ ul {
 @media (min-width: 960px) {
   .rates__list {
     display: flex;
+    align-items: center;
     justify-content: center;
   }
 }
@@ -717,6 +725,7 @@ ul {
   font-weight: 500;
   font-size: 20px;
   line-height: 23px;
+  position: relative;
   margin-top: 20px;
   margin-bottom: 20px;
   color: #2e3152;
@@ -731,23 +740,60 @@ ul {
   }
 }
 
+.checkbox__label {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.checkbox__input {
+  display: none;
+}
+
+.checkbox__fake {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border: 3px solid black;
+  border-radius: 5px;
+}
+
+.checkbox__input:checked + .checkbox__fake {
+  background-image: url("/img/check.svg");
+  border: none;
+}
+
 .options__list {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 15px;
 }
 
 .options__item {
   display: flex;
   align-items: center;
+  position: relative;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: #2e3152;
 }
-.options__item img {
-  margin-right: 20px;
+.options__item .checkbox-btn {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  min-width: 15px;
+  min-height: 15px;
+  border: 1px solid #cccdcc;
+  border-radius: 3.75px;
+  background-color: #fff;
+  position: relative;
+  background-image: url("/img/checked.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
 }
 
 .rates__price {
@@ -883,6 +929,7 @@ ul {
 }
 
 .stops {
+  display: none;
   background: #ffffff;
   box-shadow: 0px 3.97714px 7.95429px rgba(0, 0, 0, 0.05);
   border-radius: 20px;
@@ -911,6 +958,10 @@ ul {
     padding: 20px;
     max-height: 370px;
   }
+}
+
+.stops--active {
+  display: block;
 }
 
 .stops__title P {
@@ -1012,7 +1063,7 @@ ul {
 
 .form {
   font-family: "Proxima Nova", sans-serif;
-  background: url(image.png), #2e3152;
+  background: url("../img/bg-form.svg"), #2e3152;
   background-blend-mode: hard-light, normal;
   border-radius: 20px;
   margin: 0 auto;
@@ -1121,6 +1172,7 @@ ul {
 @media (min-width: 1024px) {
   .form__advantages-list {
     gap: 10px;
+    justify-content: flex-start;
   }
 }
 
@@ -1143,6 +1195,11 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+@media (min-width: 1024px) {
+  .bonus {
+    align-items: flex-start;
   }
 }
 
@@ -1245,6 +1302,7 @@ ul {
 .forms__confidentiality {
   font-size: 12px;
   line-height: 14px;
+  font-family: "Roboto";
   margin: 0 auto;
   margin-top: 10px;
   color: #ffffff;
