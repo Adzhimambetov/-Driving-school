@@ -206,7 +206,7 @@ ul {
 
 .nav-mobile {
   display: none;
-  background-image: url("img/nav-mobile-bg.svg");
+  background-image: url("../img/nav-mobile-bg.svg");
   width: 100%;
   position: absolute;
   top: 0;
@@ -315,7 +315,7 @@ ul {
   margin-top: 70px;
   background-color: white;
   background: linear-gradient(180deg, rgba(246, 245, 243, 0) 15.57%, #f6f5f3 80.43%);
-  background-image: url("img/auto-mobile.svg"), url("img/header-bg-mobile.svg");
+  background-image: url("../img/auto-mobile.svg"), url("../img/header-bg-mobile.svg");
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: contain;
@@ -323,14 +323,14 @@ ul {
 @media (min-width: 767px) {
   .header-info {
     background-color: white;
-    background: url("img/header-auto-bg.svg") right -350px bottom -15px no-repeat, url("img/header-bg.svg") right -280px bottom no-repeat;
+    background: url("../img/header-auto-bg.svg") right -350px bottom -15px no-repeat, url("../img/header-bg.svg") right -280px bottom no-repeat;
     background-size: contain;
   }
 }
 @media (min-width: 1024px) {
   .header-info {
     background-color: white;
-    background: url("img/header-auto-bg.svg") right bottom -15px no-repeat, url("img/header-bg.svg") right bottom no-repeat;
+    background: url("../img/header-auto-bg.svg") right bottom -15px no-repeat, url("../img/header-bg.svg") right bottom no-repeat;
     background-size: contain;
   }
 }
@@ -972,7 +972,7 @@ ul {
 }
 
 .map__img {
-  background-image: url("img/map-mobile.svg");
+  background-image: url("../img/map-mobile.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -983,7 +983,7 @@ ul {
 }
 @media (min-width: 500px) {
   .map__img {
-    background-image: url("img/map.svg");
+    background-image: url("../img/map.svg");
     background-size: cover;
     height: 289px;
     max-width: 760px;
@@ -991,7 +991,7 @@ ul {
 }
 @media (min-width: 1024px) {
   .map__img {
-    background-image: url("img/map.svg");
+    background-image: url("../img/map.svg");
     width: 760px;
   }
 }

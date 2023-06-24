@@ -208,7 +208,7 @@
 }
 
 .map__img {
-  background-image: url('img/map-mobile.svg');
+  background-image: url('../img/map-mobile.svg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -219,14 +219,14 @@
   margin: 0 auto;
 
   @media (min-width: 500px) {
-    background-image: url('img/map.svg');
+    background-image: url('../img/map.svg');
     background-size: cover;
     height: 289px;
     max-width: 760px;
   }
 
   @media (min-width: 1024px) {
-    background-image: url('img/map.svg');
+    background-image: url('../img/map.svg');
     width: 760px;
   }
 }
