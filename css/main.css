@@ -759,7 +759,7 @@ ul {
 }
 
 .checkbox__input:checked + .checkbox__fake {
-  background-image: url("/img/check.svg");
+  background-image: url("../img/check.svg");
   border: none;
 }
 
@@ -790,7 +790,7 @@ ul {
   border-radius: 3.75px;
   background-color: #fff;
   position: relative;
-  background-image: url("/img/checked.svg");
+  background-image: url("../img/checked.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
