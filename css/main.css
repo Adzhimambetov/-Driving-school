@@ -517,6 +517,7 @@ ul {
   padding-right: 57px;
   overflow: hidden;
   min-height: 145px;
+  width: 320px;
   max-width: 374px;
   background: #ffffff;
   box-shadow: 0px 3.97714px 7.95429px rgba(0, 0, 0, 0.05);
@@ -526,6 +527,7 @@ ul {
   .advantages__item {
     padding-top: 20px;
     padding-left: 20px;
+    width: 373px;
   }
   .advantages__item img {
     display: none;
@@ -568,7 +570,7 @@ ul {
   line-height: 14px;
   display: flex;
   align-items: center;
-  max-width: 235px;
+  width: 235px;
   color: #a5a5a5;
 }
 @media (min-width: 1024px) {

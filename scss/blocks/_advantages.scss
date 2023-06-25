@@ -27,6 +27,7 @@
   overflow: hidden;
 
   min-height: 145px;
+  width: 320px;
   max-width: 374px;
 
   background: #ffffff;
@@ -36,6 +37,8 @@
   @media (min-width: 1024px) {
     padding-top: 20px;
     padding-left: 20px;
+
+    width: 373px;
 
     img {
       display: none;
@@ -84,7 +87,7 @@
   display: flex;
   align-items: center;
 
-  max-width: 235px;
+  width: 235px;
 
   color: $unact;
 
