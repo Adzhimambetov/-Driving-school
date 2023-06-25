@@ -1,26 +1,26 @@
 .header-info {
   min-height: 500px;
   margin-top: 70px;
-  background-color: $white;
-  background: linear-gradient(180deg, rgba(246, 245, 243, 0) 15.57%, #f6f5f3 80.43%);
+  background: white;
 
-  background-image: url('../img/auto-mobile.svg'), url('../img/header-bg-mobile.svg');
+  background-image: url('../img/auto-mobile.png'), url('../img/header-bg-mobile.png');
   background-repeat: no-repeat;
   background-position: bottom right;
 
   background-size: contain;
 
-  @media (min-width: 767px) {
-    background-color: $white;
-    background: url('../img/header-auto-bg.svg') right -350px bottom -15px no-repeat,
-      url('../img/header-bg.svg') right -280px bottom no-repeat;
+  @media (min-width: 560px) {
+    background-color: white;
+    background: url('../img/header-auto-bg.png') right -350px bottom -15px no-repeat,
+      url('../img/header-bg.png') right -280px bottom no-repeat;
     background-size: contain;
   }
 
   @media (min-width: 1024px) {
-    background-color: $white;
-    background: url('../img/header-auto-bg.svg') right bottom -15px no-repeat,
-      url('../img/header-bg.svg') right bottom no-repeat;
+    background-color: white;
+    background: url('../img/header-auto-bg.png') right bottom -15px no-repeat,
+      linear-gradient(180deg, rgba(246, 245, 243, 0) 15.57%, #f6f5f3 80.43%),
+      url('../img/header-bg.png') right bottom no-repeat;
     background-size: contain;
   }
 }
@@ -53,7 +53,7 @@
     color: $red;
   }
 
-  @media (min-width: 767px) {
+  @media (min-width: 560px) {
     font-size: 48px;
     line-height: 130%;
 

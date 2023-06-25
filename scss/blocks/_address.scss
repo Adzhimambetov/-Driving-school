@@ -65,13 +65,14 @@
 
 .address__list {
   @media (max-width: 1024px) {
-    display: flex;
-    flex-wrap: nowrap;
     overflow-x: auto;
+    display: flex;
+    scroll-snap-type: x mandatory;
   }
 }
 
 .address__item {
+  scroll-snap-align: center;
   flex: 0 0 auto;
   cursor: pointer;
   padding: 10px;

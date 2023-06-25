@@ -103,13 +103,18 @@
 .container {
   margin: 0 auto;
 
+  @media (min-width: 767px) and (max-width: 1110px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   max-width: 1160px;
 }
 
 .nav-mobile {
   display: none;
 
-  background-image: url('../img/nav-mobile-bg.svg');
+  background-image: url('../img/nav-mobile-bg.png');
 
   width: 100%;
 
